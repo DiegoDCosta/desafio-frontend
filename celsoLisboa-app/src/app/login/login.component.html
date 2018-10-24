@@ -1,14 +1,16 @@
 <section>
     <div class="login">
-        <h1 class="login_titulo">Login</h1>
-        <div class="input-group">
-            <input [(ngModel)]="usuario.nome" type="text" id="usuario" class="input border-radius" placeholder="Email">
-        </div>
-        <div class="input-group">
-            <input [(ngModel)]="usuario.senha" id="senha" type="password" class="input border-radius" placeholder="Senha">
-        </div>
-        <button type="submit" class="btn btn_login btn_radius btn_block" (click)="fazerLogin()">
+        <form>
+            <h1 class="login_titulo">Login</h1>
+            <div class="input-group">
+                <input type="text" id="usuario" class="input border-radius" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <input id="senha" type="password" class="input border-radius" placeholder="Senha">
+            </div>
+            <button type="submit" class="btn btn_login btn_radius btn_block" (click)="fazerLogin()">
                 acessar
             </button>
+        </form>
     </div>
 </section>
