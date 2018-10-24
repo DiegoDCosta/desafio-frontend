@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { Curso } from './courses';
-import {API} from '../API/api';
+
+import {API} from '../_API/api';
+import {Curso} from '../cursos/cursos';
 
 @Injectable({
   providedIn: 'root'
 })
+export class CursosService {
 
-export class CoursesService {
-
-  constructor(private http: HttpClient) { }
+  constructor( private http: HttpClient) { }
 
   //método get de cursos
   getCursos(){

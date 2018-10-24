@@ -1,20 +1,20 @@
 <section>
     <div class="cursos">
         <div class="card_box">
-            <div class="card" *ngFor="let curso of cursos">
+            <div class="card">
                 <div class="card_header">
-                    <span>{{curso.nome}}</span>
+                    <span>curso.nome</span>
                     <a href="#" class="card_close"></a>
                 </div>
                 <div class="card_body">
-                    <div class="card_body_instructor" *ngFor="let professor of curso.professores">
-                        <p>{{professor.nome}}</p>
+                    <div class="card_body_instructor">
+                        <p>professor.nome</p>
                     </div>
                     <div class="card_body_room_hour">
-                        <span *ngFor="let sala of curso.salas">
-                            <p>sala {{sala.sala}}</p>
-                        </span>
-                        <span>{{curso.inicio}} às {{curso.fim}}</span>
+                        <span>
+                          <p>sala</p>
+                      </span>
+                        <span>curso.inicio às curso.fim</span>
                     </div>
                 </div>
             </div>

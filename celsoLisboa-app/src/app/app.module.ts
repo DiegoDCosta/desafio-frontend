@@ -7,10 +7,10 @@ import { routing } from './routing';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
-import { CoursesComponent } from './courses/courses.component';
 import { AuthService } from './login/auth.service';
-import { AuthGuard } from './guards/auth.guard';
+import { AuthGuard } from './_guards/auth.guard';
 import { CreateCourseComponent } from './create-course/create-course.component';
+import { CursosComponent } from './cursos/cursos.component';
 
 
 @NgModule({
@@ -18,8 +18,8 @@ import { CreateCourseComponent } from './create-course/create-course.component';
     AppComponent,
     LoginComponent,
     HeaderComponent,
-    CoursesComponent,
-    CreateCourseComponent
+    CreateCourseComponent,
+    CursosComponent
   ],
   imports: [
     HttpClientModule,

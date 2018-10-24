@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import {CreateCourse} from './create-course'
-import {API} from '../API/api';
+import {API} from '../_API/api';
 
 
 @Injectable({
